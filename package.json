@@ -1,0 +1,9 @@
+{
+  "name": "Yugen",
+  "preferGlobal": true,
+  "author": "Jackson Gariety <personal@jacksongariety.com>",
+  "description": "An ultra-simple, colalborative markdown editor.",
+  "dependencies" : {
+    "socket.io" :  "*"
+  }
+}
