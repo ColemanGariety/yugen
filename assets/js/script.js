@@ -1,19 +1,31 @@
 var socket = io.connect('http://localhost:8080'),
-  inputField = document.getElementById('inputField')
 
-socket.on('msg', display)
+  textField = document.getElementById('text')
 
-function display(msg) {
-  document.getElementById('text').value = msg;
-}
+  display = function(msg) {
+    textField.value = msg
+  },
 
-function sendMsg() {
-  socket.emit('msg', inputField.value)
-  display(inputField.value)
-  inputField.value = ''
-}
+  sendMsg = function() {
+    setTimeout(function(){
+      socket.emit('msg', textField.value)
+    }, 0)
+  };
 
-document.getElementById('form').onsubmit = function() {
-  sendMsg();
-  return false;
-}
+if (textField.addEventListener) {
+  textField.addEventListener("keydown", sendMsg, false);
+  textField.addEventListener("paste", sendMsg, false);
+  textField.addEventListener("cut", sendMsg, false);
+} else if(textField.attachEvent) {
+  textField.addEventListener("onkeydown", sendMsg);
+  textField.addEventListener("onpaste", sendMsg);
+  textField.addEventListener("oncut", sendMsg);
+} else {
+  textField.onkeydown = sendMsg;
+  textField.onpaste = sendMsg;
+  textField.oncut = sendMsg;
+};
+
+textField.focus();
+
+socket.on('msg', display);
