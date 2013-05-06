@@ -46,10 +46,16 @@ var token = window.location.href.substr(window.location.href.lastIndexOf('/') + 
   placeholderController = function() {
     if (["", "<br>"].indexOf(textField.innerHTML) == -1) {
       placeholder.removeClass('active')
-      document.title = textField.innerText.split('\n')[0];
+      title = textField.innerText.split('\n')[0];
+
+      if (title.split('. ')[0] != title) {
+        title = title.split('. ')[0] + ".";
+      }
+
+      document.title = title
     } else {
       placeholder.addClass('active')
-      document.title = "Yugen ⋅ A text editing experience to share";
+      document.title = "Yugen ⋅ A text editing experience to share.";
     }
   };
 

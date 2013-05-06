@@ -48,6 +48,22 @@ var routes = require( './routes.js' );
 
 app.get( '/', routes.index );
 app.get( '/:token', routes.read );
+app.get('/assets/*', function (req, res) {
+    res.sendfile(__dirname + '/assets/' + req.params[0]);
+});
+
+// Redirect app
+
+var redirect = express();
+
+redirect.all('*', function(req, res){
+  res.redirect('http://yugentext.com:8081/' + req.subdomains[0]);
+});
+
+// Main app
+
+app.use(express.vhost('*.yugentext.com', redirect))
+app.use(express.vhost('yugentext.com', app));
 
 // Start app on port 8081
 app.listen(8081);

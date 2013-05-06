@@ -16,7 +16,7 @@ exports.read = function(req, res) {
 
     res.render('index', {
         content: err || file.content == undefined ? "" : file.content,
-        title: err || file.content == undefined ? "Yugen ⋅ A text editing experience to share" : file.content.split('<div><br></div>')[0],
+        title: err || file.content == undefined ? "Yugen ⋅ A text editing experience to share." : file.content.split('<div><br></div>')[0],
         empty: err |file.content == "" || file.content == "<br>" || file.content == undefined
     });
   });
