@@ -4,6 +4,10 @@
   "author": "Jackson Gariety <personal@jacksongariety.com>",
   "description": "An ultra-simple, colalborative markdown editor.",
   "dependencies" : {
-    "socket.io" :  "*"
+    "express" : "*",
+    "socket.io" :  "*",
+    "hbs" : "*",
+    "connect" : "*",
+    "mongoose" : "*"
   }
 }
