@@ -21,7 +21,7 @@ body {
   top: 0;
   bottom: 0;
   padding: 40px;
-  padding-right: 100px;
+  padding-right: 150px;
   font-weight: 400;
   color: #2c3e50;
 }
@@ -31,7 +31,7 @@ body {
 }
 
 #placeholder {
-  color: LightGray;
+  color: #c6c6c6;
   display: none;
 }
 
@@ -40,9 +40,10 @@ body {
 }
 
 #yugen {
+  font-size: 2em;
   position: fixed;
-  top: 33px;
-  right: 40px;
+  top: 30px;
+  right: 30px;
   color: #c6c6c6;
   z-index: 100;
   cursor: pointer;
@@ -54,12 +55,12 @@ body {
 
 #yugen:hover {
   color: #90d3f9;
-  text-shadow: 0 0 5px #c0e7ff;
+  text-shadow: 0 0 7px #c0e7ff;
 }
 
 #yugen:active {
   color: #70bce8;
-  text-shadow: 0 0 5px #9bd7fa;
+  text-shadow: 0 0 7px #9bd7fa;
   -webkit-transition: none;
      -moz-transition: none;
           transition: none;
@@ -70,14 +71,14 @@ body {
   background: rgba(0,0,0,.66);
   color: #FAFAFA;
   position: fixed;
-  right: 19px;
-  top: 65px;
+  right: 27px;
+  top: 87px;
   padding: 2px;
   padding-bottom: 4px;
   pointer-events: none;
   padding-left: 6px;
   padding-right: 6px;
-  font-size: .55em;
+  font-size: .64em;
   -webkit-transition: opacity .5s;
      -moz-transition: opacity .5s;
           transition: opacity .5s;
@@ -99,4 +100,33 @@ body {
 
 #yugen:hover + #tooltip, #tooltip.active {
   opacity: 1;
+}
+
+#tooltip.created {
+  right: 34px;
+}
+
+@media only screen and (max-width: 800px) {
+  body {
+    font-size: 1.15em;
+  }
+
+  #text, #placeholder {
+    padding-right: 100px;
+  }
+
+  #yugen {
+    right: 19px;
+    top: 15px;
+  }
+
+  #tooltip {
+    right: 8px;
+    top: 60px;
+    font-size: .71em;
+  }
+
+  #tooltip.created {
+    right: 15px;
+  }
 }

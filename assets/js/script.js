@@ -1,5 +1,5 @@
 var token = window.location.href.substr(window.location.href.lastIndexOf('/') + 1),
-  socket = io.connect('http://localhost:8080'),
+  socket = io.connect('http://littlebig.co:8080'),
   edited = false,
   textField = document.getElementById('text'),
   placeholder = document.getElementById('placeholder'),
@@ -13,6 +13,24 @@ var token = window.location.href.substr(window.location.href.lastIndexOf('/') + 
     placeholderController();
   },
 
+  // Set caret at end of #text
+  setCaret = function() {
+    var range, selection;
+    if(document.createRange) { //Firefox, Chrome, Opera, Safari, IE 9+
+      range = document.createRange();
+      range.selectNodeContents(textField);
+      range.collapse(false);
+      selection = window.getSelection();
+      selection.removeAllRanges();
+      selection.addRange(range);
+    } else if(document.selection ) { //IE 8 and lower
+      range = document.body.createTextRange();
+      range.moveToElementText(textField);
+      range.collapse(false);
+      range.select();
+    }
+  },
+
   // Send the text to the socket
   sendMsg = function() {
     setTimeout(function(){
@@ -24,12 +42,14 @@ var token = window.location.href.substr(window.location.href.lastIndexOf('/') + 
     }, 4)
   },
 
-  // Placeholder controller
+  // Placeholder & title controller
   placeholderController = function() {
     if (["", "<br>"].indexOf(textField.innerHTML) == -1) {
       placeholder.removeClass('active')
+      document.title = textField.innerText.split('\n')[0];
     } else {
       placeholder.addClass('active')
+      document.title = "Yugen ⋅ A text editing experience to share";
     }
   };
 
@@ -78,35 +98,22 @@ socket.on('connect', function(){
 // Begin socket connection
 socket.on('msg', display);
 
-// Set caret at end of #text
-var range, selection;
-if(document.createRange) { //Firefox, Chrome, Opera, Safari, IE 9+
-  range = document.createRange();
-  range.selectNodeContents(textField);
-  range.collapse(false);
-  selection = window.getSelection();
-  selection.removeAllRanges();
-  selection.addRange(range);
-} else if(document.selection ) { //IE 8 and lower
-  range = document.body.createTextRange();
-  range.moveToElementText(textField);
-  range.collapse(false);
-  range.select();
-}
+// Set caret on page load
+setCaret();
 
 // "Created!" tooltip
 if ($.jStorage.get('create')) {
   tooltip = document.getElementById('tooltip');
 
-  tooltip.addClass('active').innerHTML = "Created!"
-  tooltip.style.right = '26px';
+  tooltip.addClass('active').innerHTML = "Created!";
+  tooltip.addClass('created');
 
-  $.jStorage.set('create', false)
+  $.jStorage.set('create', false);
   setTimeout(function(){
-    tooltip.removeClass('active')
+    tooltip.removeClass('active');
     setTimeout(function(){
-      tooltip.innerHTML = "New Yugen&hellip;"
-      tooltip.style.right = '19px';
+      tooltip.innerHTML = "New Yugen&hellip;";
+      tooltip.removeClass('created')
     }, 500)
   }, 1000)
 }
