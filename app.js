@@ -23,11 +23,13 @@ io.sockets.on('connection', function (socket) {
 
     if (data == "" || data == "<br>" || data == undefined) {
       File.findOne({token: socket.token }, function(err, file) {
-        file.remove(function(err) {
-          if (!err) {
-            console.log("Destroyed " + socket.token)
-          }
-        });
+        if (file != null) {
+          file.remove(function(err) {
+            if (!err) {
+              console.log("Destroyed " + socket.token)
+            }
+          });
+        }
       })
     } else {
       File.update({ token: socket.token }, { content: data }, { upsert: true }, function (err, numberAffected, raw) {
@@ -48,9 +50,7 @@ var routes = require( './routes.js' );
 
 app.get( '/', routes.index );
 app.get( '/:token', routes.read );
-app.get('/assets/*', function (req, res) {
-    res.sendfile(__dirname + '/assets/' + req.params[0]);
-});
+app.use('/assets', express.static(__dirname + "/assets"));
 
 // Redirect app
 

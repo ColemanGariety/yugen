@@ -3,7 +3,23 @@ var mongoose = require('mongoose'),
   crypto = require('crypto');
 
 exports.index = function(req, res) {
-  res.redirect(crypto.randomBytes(3).toString('hex'))
+  var foundUniqueKey = false,
+    key,
+    keygen = function() {
+      key = crypto.randomBytes(4).toString('hex')
+      File.findById(key, function(err, file){
+        if (!file) {
+          foundUniqueKey = true;
+        }
+      });
+    }
+
+  // Start keygen process
+  while (foundUniqueKey == false) {
+    keygen();
+  }
+
+  res.redirect(key)
 };
 
 exports.read = function(req, res) {
@@ -16,7 +32,7 @@ exports.read = function(req, res) {
 
     res.render('index', {
         content: err || file.content == undefined ? "" : file.content,
-        title: err || file.content == undefined ? "Yugen ⋅ A text editing experience to share." : file.content.split('<div><br></div>')[0],
+        title: err || file.content == undefined ? "Yugen ⋅ A text editing experience to share." : file.content.split('<br>')[0].replace(/<[^>]*>/g, ''),
         empty: err |file.content == "" || file.content == "<br>" || file.content == undefined
     });
   });
