@@ -32,7 +32,7 @@ io.sockets.on('connection', function (socket) {
         }
       })
     } else {
-      File.update({ token: socket.token }, { content: data }, { upsert: true }, function (err, numberAffected, raw) {
+      File.update({ token: socket.token }, { content: data[0] }, { upsert: true }, function (err, numberAffected, raw) {
         if (!err) {
           console.log("Saved " + socket.token)
         }

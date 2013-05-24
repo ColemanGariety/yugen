@@ -56,6 +56,7 @@
                     range.setStart(node, savedSel.start - charIndex);
                     foundStart = true;
                 }
+
                 if (foundStart && savedSel.end >= charIndex && savedSel.end <= nextCharIndex) {
                     range.setEnd(node, savedSel.end - charIndex);
                     throw stop;
@@ -83,7 +84,15 @@
     display = function(msg) {
       var savedSel = saveSelection(textField)
 
-      textField.innerHTML = msg;
+      var length = textField.innerHTML.length;
+
+      textField.innerHTML = msg[0];
+
+      if (msg[1].end < savedSel.end) {
+        diff = textField.innerHTML.length - length;
+        savedSel.start += diff;
+        savedSel.end += diff;
+      }
 
       restoreSelection(textField, savedSel);
 
@@ -112,9 +121,11 @@
     sendMsg = function() {
       setTimeout(function(){
         if (textField.innerHTML != storedContent) {
+          var savedSel = saveSelection(textField)
+
           placeholderController();
-          socket.emit('msg', textField.innerHTML);
           storedContent = textField.innerHTML;
+          socket.emit('msg', [storedContent, savedSel]);
         }
       }, 4)
     },
