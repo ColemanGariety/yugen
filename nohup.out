@@ -1,0 +1,91 @@
+info: socket.io started
+Listening on port 8081
+info: socket.io started
+Listening on port 8081
+debug: client authorized
+info: handshake authorized qNJjmWyNi7p-paiKlIyv
+debug: setting request GET /socket.io/1/websocket/qNJjmWyNi7p-paiKlIyv
+debug: set heartbeat interval for client qNJjmWyNi7p-paiKlIyv
+debug: client authorized for 
+debug: websocket writing 1::
+info: transport end (socket end)
+debug: set close timeout for client qNJjmWyNi7p-paiKlIyv
+debug: cleared close timeout for client qNJjmWyNi7p-paiKlIyv
+debug: cleared heartbeat interval for client qNJjmWyNi7p-paiKlIyv
+debug: discarding transport
+debug: served static content /socket.io.js
+debug: client authorized
+info: handshake authorized 2DUtGoAWmdSJXesAlIyw
+debug: setting request GET /socket.io/1/websocket/2DUtGoAWmdSJXesAlIyw
+debug: set heartbeat interval for client 2DUtGoAWmdSJXesAlIyw
+debug: client authorized for 
+debug: websocket writing 1::
+info: transport end (socket end)
+debug: set close timeout for client 2DUtGoAWmdSJXesAlIyw
+debug: cleared close timeout for client 2DUtGoAWmdSJXesAlIyw
+debug: cleared heartbeat interval for client 2DUtGoAWmdSJXesAlIyw
+debug: discarding transport
+debug: served static content /socket.io.js
+debug: client authorized
+info: handshake authorized 5hg8FIEmC693zauAlIyx
+debug: setting request GET /socket.io/1/websocket/5hg8FIEmC693zauAlIyx
+debug: set heartbeat interval for client 5hg8FIEmC693zauAlIyx
+debug: client authorized for 
+debug: websocket writing 1::
+info: transport end (socket end)
+debug: set close timeout for client 5hg8FIEmC693zauAlIyx
+debug: cleared close timeout for client 5hg8FIEmC693zauAlIyx
+debug: cleared heartbeat interval for client 5hg8FIEmC693zauAlIyx
+debug: discarding transport
+debug: served static content /socket.io.js
+debug: client authorized
+info: handshake authorized S19RAhDigpCcVYWMlIyy
+debug: setting request GET /socket.io/1/websocket/S19RAhDigpCcVYWMlIyy
+debug: set heartbeat interval for client S19RAhDigpCcVYWMlIyy
+debug: client authorized for 
+debug: websocket writing 1::
+info: socket.io started
+Listening on port 8081
+info: socket.io started
+Listening on port 8081
+debug: client authorized
+info: handshake authorized oqRpsTrsI7J698ztllR0
+debug: setting request GET /socket.io/1/websocket/oqRpsTrsI7J698ztllR0
+debug: set heartbeat interval for client oqRpsTrsI7J698ztllR0
+debug: client authorized for 
+debug: websocket writing 1::
+info: transport end (socket end)
+debug: set close timeout for client oqRpsTrsI7J698ztllR0
+debug: cleared close timeout for client oqRpsTrsI7J698ztllR0
+debug: cleared heartbeat interval for client oqRpsTrsI7J698ztllR0
+debug: discarding transport
+debug: served static content /socket.io.js
+debug: client authorized
+info: handshake authorized z12YO-c_W90YRqnGllR1
+debug: setting request GET /socket.io/1/websocket/z12YO-c_W90YRqnGllR1
+debug: set heartbeat interval for client z12YO-c_W90YRqnGllR1
+debug: client authorized for 
+debug: websocket writing 1::
+info: transport end (socket end)
+debug: set close timeout for client z12YO-c_W90YRqnGllR1
+debug: cleared close timeout for client z12YO-c_W90YRqnGllR1
+debug: cleared heartbeat interval for client z12YO-c_W90YRqnGllR1
+debug: discarding transport
+debug: served static content /socket.io.js
+debug: client authorized
+info: handshake authorized A3H_uOYRYQEucJGDllR2
+debug: setting request GET /socket.io/1/websocket/A3H_uOYRYQEucJGDllR2
+debug: set heartbeat interval for client A3H_uOYRYQEucJGDllR2
+debug: client authorized for 
+debug: websocket writing 1::
+info: socket.io started
+Listening on port 8081
+info: socket.io started
+Listening on port 8081
+debug: served static content /socket.io.js
+debug: client authorized
+info: handshake authorized WQPZmvL5PuAgWeVal2d7
+debug: setting request GET /socket.io/1/websocket/WQPZmvL5PuAgWeVal2d7
+debug: set heartbeat interval for client WQPZmvL5PuAgWeVal2d7
+debug: client authorized for 
+debug: websocket writing 1::

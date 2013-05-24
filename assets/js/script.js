@@ -7,63 +7,85 @@
     storedContent = textField.innerHTML,
     yugen = document.getElementById('yugen'),
 
-    // Get caret pos
-    getCaret = function(editableDiv) {
-      var caretPos = 0, containerEl = null, sel, range;
-      if (window.getSelection) {
-          sel = window.getSelection();
-          if (sel.rangeCount) {
-              range = sel.getRangeAt(0);
-              if (range.commonAncestorContainer.parentNode == editableDiv) {
-                  caretPos = range.endOffset;
-              }
-          }
-      } else if (document.selection && document.selection.createRange) {
-          range = document.selection.createRange();
-          if (range.parentElement() == editableDiv) {
-              var tempEl = document.createElement("span");
-              editableDiv.insertBefore(tempEl, editableDiv.firstChild);
-              var tempRange = range.duplicate();
-              tempRange.moveToElementText(tempEl);
-              tempRange.setEndPoint("EndToEnd", range);
-              caretPos = tempRange.text.length;
-          }
-      }
-      return caretPos;
-    },
+    saveSelection = function(containerEl) {
+        var charIndex = 0, start = 0, end = 0, foundStart = false, stop = {};
+        var sel = rangy.getSelection(), range;
 
-    caret = getCaret(textField),
-
-    // Set caret position
-    setCaret = function(el, caretPos) {
-      var elem = el;
-
-      if(elem != null) {
-        if(elem.createTextRange) {
-          var range = elem.createTextRange();
-          range.move('character', caretPos);
-          range.select();
+        function traverseTextNodes(node, range) {
+            if (node.nodeType == 3) {
+                if (!foundStart && node == range.startContainer) {
+                    start = charIndex + range.startOffset;
+                    foundStart = true;
+                }
+                if (foundStart && node == range.endContainer) {
+                    end = charIndex + range.endOffset;
+                    throw stop;
+                }
+                charIndex += node.length;
+            } else {
+                for (var i = 0, len = node.childNodes.length; i < len; ++i) {
+                    traverseTextNodes(node.childNodes[i], range);
+                }
+            }
         }
-        else {
-          if(elem.selectionStart) {
-              elem.focus();
-              elem.setSelectionRange(caretPos, caretPos);
-          }
-          else
-              elem.focus();
+
+        if (sel.rangeCount) {
+            try {
+                traverseTextNodes(containerEl, sel.getRangeAt(0));
+            } catch (ex) {
+                if (ex != stop) {
+                    throw ex;
+                }
+            }
         }
-      }
-    },
+
+        return {
+            start: start,
+            end: end
+        };
+    }
+
+    restoreSelection = function(containerEl, savedSel) {
+        var charIndex = 0, range = rangy.createRange(), foundStart = false, stop = {};
+        range.collapseToPoint(containerEl, 0);
+
+        function traverseTextNodes(node) {
+            if (node.nodeType == 3) {
+                var nextCharIndex = charIndex + node.length;
+                if (!foundStart && savedSel.start >= charIndex && savedSel.start <= nextCharIndex) {
+                    range.setStart(node, savedSel.start - charIndex);
+                    foundStart = true;
+                }
+                if (foundStart && savedSel.end >= charIndex && savedSel.end <= nextCharIndex) {
+                    range.setEnd(node, savedSel.end - charIndex);
+                    throw stop;
+                }
+                charIndex = nextCharIndex;
+            } else {
+                for (var i = 0, len = node.childNodes.length; i < len; ++i) {
+                    traverseTextNodes(node.childNodes[i]);
+                }
+            }
+        }
+
+        try {
+            traverseTextNodes(containerEl);
+        } catch (ex) {
+            if (ex == stop) {
+                rangy.getSelection().setSingleRange(range);
+            } else {
+                throw ex;
+            }
+        }
+    }
 
     // Update the text area
     display = function(msg) {
-      caret = getCaret(textField)
+      var savedSel = saveSelection(textField)
 
       textField.innerHTML = msg;
 
-      textField.focus();
-
-      setCaret(textField, caret);
+      restoreSelection(textField, savedSel);
 
       placeholderController();
     },
