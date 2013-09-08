@@ -89,3 +89,504 @@ debug: setting request GET /socket.io/1/websocket/WQPZmvL5PuAgWeVal2d7
 debug: set heartbeat interval for client WQPZmvL5PuAgWeVal2d7
 debug: client authorized for 
 debug: websocket writing 1::
+info: socket.io started
+Listening on port 8081
+debug: served static content /socket.io.js
+debug: client authorized
+info: handshake authorized RvP_cCE5b-lPjpaZttKr
+debug: setting request GET /socket.io/1/websocket/RvP_cCE5b-lPjpaZttKr
+debug: set heartbeat interval for client RvP_cCE5b-lPjpaZttKr
+debug: client authorized for 
+debug: websocket writing 1::
+info: socket.io started
+Listening on port 8081
+
+DEBUG: Running node-supervisor with
+DEBUG:   program 'app.js'
+DEBUG:   --watch '.'
+DEBUG:   --ignore 'undefined'
+DEBUG:   --extensions 'node|js'
+DEBUG:   --exec 'node'
+
+DEBUG: Starting child process with 'node app.js'
+DEBUG: Watching directory '/home/jackson/yugentext.com' for changes.
+info: socket.io started
+Listening on port 8081
+debug: served static content /socket.io.js
+debug: client authorized
+info: handshake authorized QKgSejUnOh5zZapEa1_T
+debug: setting request GET /socket.io/1/websocket/QKgSejUnOh5zZapEa1_T
+debug: set heartbeat interval for client QKgSejUnOh5zZapEa1_T
+debug: client authorized for 
+debug: websocket writing 1::
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: emitting heartbeat for client QKgSejUnOh5zZapEa1_T
+debug: websocket writing 2::
+debug: set heartbeat timeout for client QKgSejUnOh5zZapEa1_T
+debug: got heartbeat packet
+debug: cleared heartbeat timeout for client QKgSejUnOh5zZapEa1_T
+debug: set heartbeat interval for client QKgSejUnOh5zZapEa1_T
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: emitting heartbeat for client QKgSejUnOh5zZapEa1_T
+debug: websocket writing 2::
+debug: set heartbeat timeout for client QKgSejUnOh5zZapEa1_T
+debug: got heartbeat packet
+debug: cleared heartbeat timeout for client QKgSejUnOh5zZapEa1_T
+debug: set heartbeat interval for client QKgSejUnOh5zZapEa1_T
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: emitting heartbeat for client QKgSejUnOh5zZapEa1_T
+debug: websocket writing 2::
+debug: set heartbeat timeout for client QKgSejUnOh5zZapEa1_T
+debug: got heartbeat packet
+debug: cleared heartbeat timeout for client QKgSejUnOh5zZapEa1_T
+debug: set heartbeat interval for client QKgSejUnOh5zZapEa1_T
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: broadcasting packet
+Saved 9ad8b4ea
+debug: emitting heartbeat for client QKgSejUnOh5zZapEa1_T
+debug: websocket writing 2::
+debug: set heartbeat timeout for client QKgSejUnOh5zZapEa1_T
+debug: got heartbeat packet
+debug: cleared heartbeat timeout for client QKgSejUnOh5zZapEa1_T
+debug: set heartbeat interval for client QKgSejUnOh5zZapEa1_T
+debug: emitting heartbeat for client QKgSejUnOh5zZapEa1_T
+debug: websocket writing 2::
+debug: set heartbeat timeout for client QKgSejUnOh5zZapEa1_T
+debug: got heartbeat packet
+debug: cleared heartbeat timeout for client QKgSejUnOh5zZapEa1_T
+debug: set heartbeat interval for client QKgSejUnOh5zZapEa1_T
+debug: served static content /socket.io.js
+debug: client authorized
+info: handshake authorized FmmSlJc6Ej9wr9MAa1_U
+debug: setting request GET /socket.io/1/websocket/FmmSlJc6Ej9wr9MAa1_U
+debug: set heartbeat interval for client FmmSlJc6Ej9wr9MAa1_U
+debug: client authorized for 
+debug: websocket writing 1::
+info: transport end (socket end)
+debug: set close timeout for client FmmSlJc6Ej9wr9MAa1_U
+debug: cleared close timeout for client FmmSlJc6Ej9wr9MAa1_U
+debug: cleared heartbeat interval for client FmmSlJc6Ej9wr9MAa1_U
+debug: discarding transport
+debug: emitting heartbeat for client QKgSejUnOh5zZapEa1_T
+debug: websocket writing 2::
+debug: set heartbeat timeout for client QKgSejUnOh5zZapEa1_T
+debug: got heartbeat packet
+debug: cleared heartbeat timeout for client QKgSejUnOh5zZapEa1_T
+debug: set heartbeat interval for client QKgSejUnOh5zZapEa1_T
+DEBUG: Sending SIGHUP to child...
